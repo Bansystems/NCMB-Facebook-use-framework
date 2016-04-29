@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'NCMB-Facebook-use-framework_Example', :exclusive => true do
+  pod 'NCMB-Facebook-use-framework', :path => '../'
+end
+
+target 'NCMB-Facebook-use-framework_Tests', :exclusive => true do
+  pod 'NCMB-Facebook-use-framework', :path => '../'
+
+  pod 'Quick', '~> 0.8'
+  pod 'Nimble', '~> 3.0'
+end
