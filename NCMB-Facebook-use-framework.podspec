@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "NCMB-Facebook-use-framework"
   s.version          = "0.1.0"
-  s.summary          = "A short description of NCMB-Facebook-use-framework."
+  s.summary          = "NCMBでFacebookSDKがpodsのuse_frameworksを有効にしていると動かないことの回避"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,13 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
+  NCMBでFacebookSDKがpodsのuse_frameworksを有効にしていると動かないことの回避をします。 iOSのSocialフレームワークを使ってFacebook情報を取得します。
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/NCMB-Facebook-use-framework"
+  s.homepage         = "https://github.com/hiromi2424/NCMB-Facebook-use-framework"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "hiromi2424" => "hiromi2424@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/NCMB-Facebook-use-framework.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/hiromi2424/NCMB-Facebook-use-framework.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/hiromi2424'
 
   s.ios.deployment_target = '8.0'
@@ -40,7 +41,5 @@ Pod::Spec.new do |s|
   s.dependency 'Alamofire', '~> 3.3'
   s.dependency 'SwiftyJSON', '~> 2.3.0'
   s.dependency 'PromiseKit'
-  s.dependency 'Alamofire-SwiftyJSON'
-  s.dependency 'NCMB'
 
 end
