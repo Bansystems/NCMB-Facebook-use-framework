@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "hiromi2424" => "hiromi2424@gmail.com" }
   s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/NCMB-Facebook-use-framework.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/hiromi2424'
 
   s.ios.deployment_target = '8.0'
 
@@ -37,5 +37,10 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Alamofire', '~> 3.3'
+  s.dependency 'SwiftyJSON', '~> 2.3.0'
+  s.dependency 'PromiseKit'
+  s.dependency 'Alamofire-SwiftyJSON'
+  s.dependency 'NCMB'
+
 end

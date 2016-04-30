@@ -2,7 +2,7 @@
 
 import Quick
 import Nimble
-import NCMB-Facebook-use-framework
+import NCMB_Facebook_use_framework
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {

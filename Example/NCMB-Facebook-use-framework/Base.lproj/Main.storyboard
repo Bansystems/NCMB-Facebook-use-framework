@@ -1,25 +1,137 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="NCMB_Facebook_use_framework_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="15q-PQ-TQ1">
+                                <rect key="frame" x="188" y="66" width="171" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook App Id:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFf-n2-dyI">
+                                <rect key="frame" x="16" y="70" width="172" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KBS-Np-dMH">
+                                <rect key="frame" x="188" y="109" width="171" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NCMB App Key:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3r-R6-huN">
+                                <rect key="frame" x="16" y="113" width="172" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eq5-yU-Twj">
+                                <rect key="frame" x="168" y="217" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2Wc-UL-kwd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAa-hQ-jej">
+                                <rect key="frame" x="16" y="287" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xOh-53-abA">
+                                <rect key="frame" x="67" y="287" width="292" height="380"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QqI-n6-2LM">
+                                <rect key="frame" x="188" y="152" width="171" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NCMB Client Key:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajp-9K-nyv">
+                                <rect key="frame" x="16" y="156" width="172" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="A3r-R6-huN" firstAttribute="top" secondItem="pFf-n2-dyI" secondAttribute="bottom" constant="22" id="3Sp-Io-TJy"/>
+                            <constraint firstItem="eq5-yU-Twj" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="3hr-Oo-KzI"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="pFf-n2-dyI" secondAttribute="leading" id="5Rx-Wx-JQv"/>
+                            <constraint firstItem="NAa-hQ-jej" firstAttribute="bottom" secondItem="pFf-n2-dyI" secondAttribute="bottom" id="6AS-Vo-Tnh"/>
+                            <constraint firstItem="pFf-n2-dyI" firstAttribute="width" secondItem="15q-PQ-TQ1" secondAttribute="width" id="6OX-Ts-eNb"/>
+                            <constraint firstItem="NAa-hQ-jej" firstAttribute="centerX" secondItem="pFf-n2-dyI" secondAttribute="centerX" id="7nB-gk-3db"/>
+                            <constraint firstItem="Ajp-9K-nyv" firstAttribute="leading" secondItem="A3r-R6-huN" secondAttribute="leading" id="7sT-wW-t2g"/>
+                            <constraint firstItem="xOh-53-abA" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="8or-lc-rOG"/>
+                            <constraint firstItem="Ajp-9K-nyv" firstAttribute="width" secondItem="A3r-R6-huN" secondAttribute="width" id="Cnw-Rx-WwZ"/>
+                            <constraint firstItem="NAa-hQ-jej" firstAttribute="trailing" secondItem="pFf-n2-dyI" secondAttribute="trailing" id="G1t-ut-m27"/>
+                            <constraint firstItem="eq5-yU-Twj" firstAttribute="top" secondItem="15q-PQ-TQ1" secondAttribute="bottom" constant="40" id="Ids-Ao-RK8"/>
+                            <constraint firstItem="xOh-53-abA" firstAttribute="top" secondItem="NAa-hQ-jej" secondAttribute="top" id="K7n-lN-Nkg"/>
+                            <constraint firstItem="QqI-n6-2LM" firstAttribute="centerY" secondItem="Ajp-9K-nyv" secondAttribute="centerY" id="LVB-ce-UQD"/>
+                            <constraint firstItem="15q-PQ-TQ1" firstAttribute="leading" secondItem="pFf-n2-dyI" secondAttribute="trailing" id="OU5-st-Zn9"/>
+                            <constraint firstItem="QqI-n6-2LM" firstAttribute="leading" secondItem="Ajp-9K-nyv" secondAttribute="trailing" id="S1M-bu-GKr"/>
+                            <constraint firstItem="xOh-53-abA" firstAttribute="leading" secondItem="NAa-hQ-jej" secondAttribute="trailing" constant="10" id="VHD-HN-GZY"/>
+                            <constraint firstItem="NAa-hQ-jej" firstAttribute="top" secondItem="eq5-yU-Twj" secondAttribute="bottom" constant="40" id="XQd-vF-CHV"/>
+                            <constraint firstItem="NAa-hQ-jej" firstAttribute="leading" secondItem="pFf-n2-dyI" secondAttribute="leading" id="Y4f-Tj-HLp"/>
+                            <constraint firstItem="A3r-R6-huN" firstAttribute="width" secondItem="pFf-n2-dyI" secondAttribute="width" id="ZUf-1A-vKA"/>
+                            <constraint firstItem="eq5-yU-Twj" firstAttribute="top" secondItem="A3r-R6-huN" secondAttribute="bottom" constant="40" id="b6S-ig-avH"/>
+                            <constraint firstItem="eq5-yU-Twj" firstAttribute="top" secondItem="Ajp-9K-nyv" secondAttribute="bottom" constant="40" id="bOQ-lp-5li"/>
+                            <constraint firstItem="NAa-hQ-jej" firstAttribute="width" secondItem="pFf-n2-dyI" secondAttribute="width" id="bWz-xt-6Df"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="15q-PQ-TQ1" secondAttribute="trailing" id="byH-vf-H58"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xOh-53-abA" secondAttribute="bottom" id="dvB-x4-Me6"/>
+                            <constraint firstItem="15q-PQ-TQ1" firstAttribute="centerY" secondItem="pFf-n2-dyI" secondAttribute="centerY" id="kH3-0X-Aam"/>
+                            <constraint firstItem="KBS-Np-dMH" firstAttribute="centerY" secondItem="A3r-R6-huN" secondAttribute="centerY" id="lmm-wJ-I4x"/>
+                            <constraint firstItem="Ajp-9K-nyv" firstAttribute="width" secondItem="QqI-n6-2LM" secondAttribute="width" id="opO-di-pR8"/>
+                            <constraint firstItem="15q-PQ-TQ1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="qmC-Y0-BIz"/>
+                            <constraint firstItem="A3r-R6-huN" firstAttribute="width" secondItem="KBS-Np-dMH" secondAttribute="width" id="rx6-70-IJk"/>
+                            <constraint firstItem="pFf-n2-dyI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="uTk-xA-lkc"/>
+                            <constraint firstItem="A3r-R6-huN" firstAttribute="leading" secondItem="pFf-n2-dyI" secondAttribute="leading" id="v1X-JJ-u0b"/>
+                            <constraint firstItem="Ajp-9K-nyv" firstAttribute="top" secondItem="A3r-R6-huN" secondAttribute="bottom" constant="22" id="v3D-jy-f6J"/>
+                            <constraint firstItem="KBS-Np-dMH" firstAttribute="leading" secondItem="A3r-R6-huN" secondAttribute="trailing" id="xxV-e5-9Op"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qmC-Y0-BIz"/>
+                                <exclude reference="Ids-Ao-RK8"/>
+                                <exclude reference="b6S-ig-avH"/>
+                                <exclude reference="6AS-Vo-Tnh"/>
+                                <exclude reference="7nB-gk-3db"/>
+                                <exclude reference="G1t-ut-m27"/>
+                                <exclude reference="bWz-xt-6Df"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="NCMBAppKeyField" destination="KBS-Np-dMH" id="82G-Sd-XpF"/>
+                        <outlet property="NCMBClientKeyField" destination="QqI-n6-2LM" id="Rp6-Il-mZY"/>
+                        <outlet property="facebookAppIDField" destination="15q-PQ-TQ1" id="JEk-1c-Rib"/>
+                        <outlet property="loginButton" destination="eq5-yU-Twj" id="a03-jc-hYO"/>
+                        <outlet property="userInfoView" destination="xOh-53-abA" id="NS3-dd-2hp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="250.5" y="299.5"/>
         </scene>
     </scenes>
 </document>
